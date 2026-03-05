@@ -1,7 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
-[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/home/hako/code/scala/newton-scalajs/project/"), "newton-scalajs-build")...[0m
-[0m[[0m[0minfo[0m] [0m[0mUpdating newton-scalajs-build[0m
-[0m[[0m[0minfo[0m] [0m[0mResolved newton-scalajs-build dependencies[0m
-[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of newton-scalajs-build[0m
-[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of newton-scalajs-build[0m
-[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/home/hako/code/scala/newton-scalajs/project/"), "newton-scalajs-build")[0m

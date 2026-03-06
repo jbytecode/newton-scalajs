@@ -2,10 +2,10 @@ package diff
 
 import funcdef.TwoVarFuncDef
 
-type Vector = Array[Double]
+type Vect = Array[Double]
 type Matrix = Array[Array[Double]]
 
-def gradient(f: TwoVarFuncDef, x: Array[Double], h: Double = 1e-6): Array[Double] = 
+def gradient(f: TwoVarFuncDef, x: Vect, h: Double = 1e-6): Vect = 
     val dirx1 = Array(x(0) + h, x(1))
     val dirx2 = Array(x(0), x(1) + h)
     val fval = f(x)
@@ -24,16 +24,16 @@ def inverse(a: Matrix): Option[Matrix] =
         Array(-a(1)(0) / d, a(0)(0) / d)
     ))
 
-def matVecMul(a: Matrix, v: Vector): Vector = 
+def matVecMul(a: Matrix, v: Vect): Vect = 
     Array(
         a(0)(0) * v(0) + a(0)(1) * v(1),
         a(1)(0) * v(0) + a(1)(1) * v(1)
     )
 
-def vecSub(v1: Vector, v2: Vector): Vector = 
+def vecSub(v1: Vect, v2: Vect): Vect = 
     Array(v1(0) - v2(0), v1(1) - v2(1))
 
-def hessian(f: TwoVarFuncDef, x: Array[Double], h: Double = 1e-6): Matrix = 
+def hessian(f: TwoVarFuncDef, x: Vect, h: Double = 1e-6): Matrix = 
     val dirx1 = Array(x(0) + h, x(1))
     val dirx2 = Array(x(0), x(1) + h)
     val dirx12 = Array(x(0) + h, x(1) + h)
